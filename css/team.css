@@ -1,0 +1,137 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+}
+/* -----menu------ */
+.menu{
+    background-color: rgb(255, 255, 255);
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 10px;
+}
+.nav{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.nav-pc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.nav-list{
+    padding-left: 30px;
+    list-style-type: none;
+}
+.nav-list .nav-link{
+    text-decoration: none;
+    padding-right: 32px;
+    font-weight: 500;
+    color: black;
+}
+.nav-list .nav-link:hover{
+    color: #7E3AF2;
+}
+.nav-list .nav-link:last-child{
+    padding-right: 0px;
+}
+.nav-right{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.nav-right a{
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+.nav-right a:hover{
+    color: #7E3AF2;
+}
+.nav-right button{
+    background-color: #7E3AF2;
+    color: white;
+    padding: 8px 12px;
+    border: #7E3AF2;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.nav-right button:hover{
+    background-color: #6238ab;
+}
+.nav-bar{
+    display: none;
+    font-size: 23px;
+    border:1px solid gray;
+    border-radius: 10px;
+    padding: 4px 12px;
+    color: black;
+}
+.nav-mobile{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+.nav-mobile-close{
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    padding-top: 10px;
+    border:1px solid gray;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: black;
+
+}
+.nav-mobile-list{
+    list-style-type: none;
+    padding: 20px 20px;
+    font-size: 10px;
+    margin-top: 5px;
+}
+.nav-mobile-button-link{
+    background-color: #7E3AF2;
+    color: white;
+    padding: 10px 10px;
+    border: #7E3AF2;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+.nav-mobile-link{
+    text-decoration: none;
+    display: block;
+    color: black;
+    line-height: 35px;
+    font-weight: bold;
+}
+.nav-over-lay{
+    background-color: rgba(132, 132, 132, 0.678);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+}
+.input-check:checked ~ .nav-over-lay{
+    display: block;
+}
+.input-check:checked ~ .nav-mobile{
+    transform: translateX(0);
+}
